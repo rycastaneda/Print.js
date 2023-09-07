@@ -40,7 +40,8 @@
     "coverage": "open coverage/lcov-report/index.html",
     "coveralls": "cat coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js",
     "start": "webpack-dev-server --public http://localhost:8080/test/manual --open",
-    "standard:fix": "standard --fix"
+    "standard:fix": "standard --fix",
+    "prepare": "npm run production"
   },
   "author": "Rodrigo Vieira <rodrigo@crabbly.com>",
   "standard": {
