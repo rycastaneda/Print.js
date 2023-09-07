@@ -1,7 +1,7 @@
 const Browser = {
   // Firefox 1.0+
   isFirefox: () => {
-    return typeof InstallTrigger !== 'undefined'
+    return typeof navigator.userAgent.includes("Firefox")
   },
   getFirefoxMajorVersion: (userAgent) => {
     userAgent = userAgent || navigator.userAgent
